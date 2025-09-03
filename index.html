@@ -1,169 +1,181 @@
 <!DOCTYPE html>
 <html lang="fr">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/reset.css">
-    <link rel="stylesheet" href="styles/style.css">
-    <link href="https://fonts.cdnfonts.com/css/monday-sans" rel="stylesheet">
-     <link href="https://fonts.cdnfonts.com/css/briston" rel="stylesheet">                      
-    <title>Portfolio BADJI DIEME Cherif</title>
-    <meta name="description" content="Bienvenue sur mon Portfolio, veuillez cliquer sur le lien, si vous voulez en savoir plus sur moi....">  
-    <link rel="stylesheet" href="favicon.ico">
+    <title>Portfolio B.C</title>
+    <link rel="stylesheet" href="/styles/reset.css">
+   <link rel="stylesheet" href="/styles/style.css">
 </head>
-
 <body>
-    <header>
+    <div id="loader">
+        <div class="cube" id="cube-loader">
+            <div class="front">B.C</div>
+            <div class="back">B.C</div>
+            <div class="right">B.C</div>
+            <div class="left">B.C</div>
+            <div class="top"></div>
+            <div class="bottom"></div>
+        </div>
+        <div class="loader-title">
+          PORTFOLIO DE B.C
+        </div>
+        <div class="loader-percent" id="loader-percent">
+          0%
+        </div>
+        <div class="loader-text">
+          En cours de chargement.....
+        </div>
+    </div>
+
+    <header id="header">
+        <div class="cube" id="cube-header" style="display:none;">
+            <div class="front">B.C</div>
+            <div class="back">B.C</div>
+            <div class="right">B.C</div>
+            <div class="left">B.C</div>
+            <div class="top"></div>
+            <div class="bottom"></div>
+        </div>
+        <span>DEVELOPPEUR WEB - FULL STACK</span>
         <nav>
-            <ul>
-                <li><a href="#section-home">accueil</a></li>
-                <li><a href="#section-aboutMe">à propos de moi</a></li>
-                <li><a href="#section-way">parcours</a></li>
-                <li><a href="#section-experience">savoir-faire</a></li>
-                <li><a href="#section-projects">mes projets</a></li>
-                <li><a href="#section-contact">Contactez-moi</a></li>
-            </ul>
+            <a href="#s1" class="accueil">Accueil</a>
+            <a href="#s2">Projets</a>
+            <a href="#s3">À propos</a>
+            <a href="#s4">Contact</a>
         </nav>
+        <div class="loc">
+          <img src="/images/globe-logo-png_seeklogo-276795-removebg-preview.png" alt="mini-logo-globe">
+          <span>FRANCE</span>
+
+        </div>
     </header>
-    <div class="container">  
-        <div class="blocHorizontal">
-            <div class="slide one" id="section-home"> 
-            </div>
-            <div class="slide two" id="section-aboutMe">
 
-                <div class="titleSection">
-                    <h2>cherif développeur web junior</h2>
+    <section id="s1" class="panel">
+        <div class="overlay"></div>
+        <div class="content firstContent">
+          <div class="titleAndWelcome">
+            <h1 class="big-title">B.C</h1>
+            <h2 id="welcome-text" class="welcome"></h2>
+          </div>
+          <div class="rick">
+            <div class="mascot">
+                <div class="head">
+                  <div class="eyes">
+                    <div class="eye"></div>
+                    <div class="eye"></div>
+                  </div>
+                  <div class="antenna"></div>
                 </div>
-                <!-- le contenu qui se situera à droite -->
-                <div class="content">
-                    <section>
-                        <h3>titre</h3>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci ut quis cupiditate expedita repudiandae doloremque laboriosam asperiores, voluptate doloribus magnam aliquam ea nulla nostrum, sapiente velit laudantium cumque, pariatur ducimus!
-                        Illo, sapiente numquam labore veritatis eveniet possimus odio assumenda doloremque animi similique a praesentium expedita enim aperiam doloribus ut blanditiis placeat sed mollitia saepe deleniti eaque ipsa iusto laboriosam! Tempore!
-                        Debitis aspernatur repudiandae distinctio maxime incidunt nemo illo aperiam sit fugiat atque nam velit accusamus corrupti saepe placeat exercitationem, harum repellendus officiis? Ex consequuntur veniam sint rem quae maiores soluta!
-                        Error accusamus distinctio porro quisquam velit libero inventore quaerat repellat recusandae aliquid corporis et quos sequi totam quasi deserunt, fugiat earum quas. Deserunt, sed enim! Suscipit nisi aliquid labore officiis!</p>
-                    </section>
-                    <section>
-                        <h3>titre2</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque eos quidem ipsum cum nulla iste nihil perferendis nam odio. Dicta nihil explicabo natus ex iusto quae tenetur consectetur suscipit! Dicta?
-                        Numquam tenetur quam excepturi modi animi autem dolor fugiat quisquam magni, corrupti dolore explicabo quos. Natus cupiditate, adipisci dolor perferendis, quo, rem ad architecto similique debitis ut vitae illo ducimus.
-                        Sit fuga nobis corporis accusamus quos quod fugiat quis repellendus accusantium natus alias omnis dolore ab eligendi quisquam dolorum error aliquam provident esse, animi distinctio vel, illo id. Unde, perferendis.
-                        Accusamus suscipit ducimus nostrum iste natus sint expedita aspernatur? Cupiditate, fuga. Itaque fugiat perferendis odit. Expedita repellat sed eligendi quidem doloremque mollitia nostrum rerum, sint excepturi! Veritatis fugit eos quos?</p>
-                    </section>
-                    <section>
-                        <h3>titre3</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum provident aperiam repellat iusto ex cupiditate harum? Quo molestiae quisquam, voluptatibus totam excepturi rem quod repellendus laudantium debitis natus velit illo?
-                        Quis facilis nihil veniam amet, molestiae, enim magnam nisi modi nesciunt nostrum itaque rem ducimus! Beatae at error ducimus deserunt, voluptates dicta placeat illum necessitatibus, explicabo fugit animi accusamus! Dolore?
-                        Consequatur facere, sunt placeat architecto sapiente harum porro natus, magni ea totam distinctio, aliquid aspernatur minima ad nostrum dolore laudantium quia nam blanditiis quae dolor quidem maxime ullam! Dolor, autem.
-                        Tenetur optio assumenda, unde tempore ducimus nostrum numquam dolores nisi est aliquam delectus harum mollitia quas laboriosam provident accusantium quis. Provident aut illum fuga autem tenetur voluptas laboriosam incidunt maxime?</p>
-                    </section>
-                
-                </div>
-
-            </div>
-            <div class="slide three" id="section-way">
-
-                   <div class="titleSection">
-                    <h2>cherif développeur web junior</h2>
-                </div>
-                <!-- le contenu qui se situera à droite -->
-                <div class="content">
-                    <section>
-                        <h3>titre</h3>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci ut quis cupiditate expedita repudiandae doloremque laboriosam asperiores, voluptate doloribus magnam aliquam ea nulla nostrum, sapiente velit laudantium cumque, pariatur ducimus!
-                        Illo, sapiente numquam labore veritatis eveniet possimus odio assumenda doloremque animi similique a praesentium expedita enim aperiam doloribus ut blanditiis placeat sed mollitia saepe deleniti eaque ipsa iusto laboriosam! Tempore!
-                        Debitis aspernatur repudiandae distinctio maxime incidunt nemo illo aperiam sit fugiat atque nam velit accusamus corrupti saepe placeat exercitationem, harum repellendus officiis? Ex consequuntur veniam sint rem quae maiores soluta!
-                        Error accusamus distinctio porro quisquam velit libero inventore quaerat repellat recusandae aliquid corporis et quos sequi totam quasi deserunt, fugiat earum quas. Deserunt, sed enim! Suscipit nisi aliquid labore officiis!</p>
-                    </section>
-                    <section>
-                        <h3>titre2</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque eos quidem ipsum cum nulla iste nihil perferendis nam odio. Dicta nihil explicabo natus ex iusto quae tenetur consectetur suscipit! Dicta?
-                        Numquam tenetur quam excepturi modi animi autem dolor fugiat quisquam magni, corrupti dolore explicabo quos. Natus cupiditate, adipisci dolor perferendis, quo, rem ad architecto similique debitis ut vitae illo ducimus.
-                        Sit fuga nobis corporis accusamus quos quod fugiat quis repellendus accusantium natus alias omnis dolore ab eligendi quisquam dolorum error aliquam provident esse, animi distinctio vel, illo id. Unde, perferendis.
-                        Accusamus suscipit ducimus nostrum iste natus sint expedita aspernatur? Cupiditate, fuga. Itaque fugiat perferendis odit. Expedita repellat sed eligendi quidem doloremque mollitia nostrum rerum, sint excepturi! Veritatis fugit eos quos?</p>
-                    </section>
-                    <section>
-                        <h3>titre3</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum provident aperiam repellat iusto ex cupiditate harum? Quo molestiae quisquam, voluptatibus totam excepturi rem quod repellendus laudantium debitis natus velit illo?
-                        Quis facilis nihil veniam amet, molestiae, enim magnam nisi modi nesciunt nostrum itaque rem ducimus! Beatae at error ducimus deserunt, voluptates dicta placeat illum necessitatibus, explicabo fugit animi accusamus! Dolore?
-                        Consequatur facere, sunt placeat architecto sapiente harum porro natus, magni ea totam distinctio, aliquid aspernatur minima ad nostrum dolore laudantium quia nam blanditiis quae dolor quidem maxime ullam! Dolor, autem.
-                        Tenetur optio assumenda, unde tempore ducimus nostrum numquam dolores nisi est aliquam delectus harum mollitia quas laboriosam provident accusantium quis. Provident aut illum fuga autem tenetur voluptas laboriosam incidunt maxime?</p>
-                    </section>
-                
-                </div>
-
-            </div>
-            <div class="slide four" id="section-experience">
-
-                   <div class="titleSection">
-                    <h2>cherif développeur web junior</h2>
-                </div>
-                <!-- le contenu qui se situera à droite -->
-                <div class="content">
-                    <section>
-                        <h3>titre</h3>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci ut quis cupiditate expedita repudiandae doloremque laboriosam asperiores, voluptate doloribus magnam aliquam ea nulla nostrum, sapiente velit laudantium cumque, pariatur ducimus!
-                        Illo, sapiente numquam labore veritatis eveniet possimus odio assumenda doloremque animi similique a praesentium expedita enim aperiam doloribus ut blanditiis placeat sed mollitia saepe deleniti eaque ipsa iusto laboriosam! Tempore!
-                        Debitis aspernatur repudiandae distinctio maxime incidunt nemo illo aperiam sit fugiat atque nam velit accusamus corrupti saepe placeat exercitationem, harum repellendus officiis? Ex consequuntur veniam sint rem quae maiores soluta!
-                        Error accusamus distinctio porro quisquam velit libero inventore quaerat repellat recusandae aliquid corporis et quos sequi totam quasi deserunt, fugiat earum quas. Deserunt, sed enim! Suscipit nisi aliquid labore officiis!</p>
-                    </section>
-                    <section>
-                        <h3>titre2</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque eos quidem ipsum cum nulla iste nihil perferendis nam odio. Dicta nihil explicabo natus ex iusto quae tenetur consectetur suscipit! Dicta?
-                        Numquam tenetur quam excepturi modi animi autem dolor fugiat quisquam magni, corrupti dolore explicabo quos. Natus cupiditate, adipisci dolor perferendis, quo, rem ad architecto similique debitis ut vitae illo ducimus.
-                        Sit fuga nobis corporis accusamus quos quod fugiat quis repellendus accusantium natus alias omnis dolore ab eligendi quisquam dolorum error aliquam provident esse, animi distinctio vel, illo id. Unde, perferendis.
-                        Accusamus suscipit ducimus nostrum iste natus sint expedita aspernatur? Cupiditate, fuga. Itaque fugiat perferendis odit. Expedita repellat sed eligendi quidem doloremque mollitia nostrum rerum, sint excepturi! Veritatis fugit eos quos?</p>
-                    </section>
-                    <section>
-                        <h3>titre3</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum provident aperiam repellat iusto ex cupiditate harum? Quo molestiae quisquam, voluptatibus totam excepturi rem quod repellendus laudantium debitis natus velit illo?
-                        Quis facilis nihil veniam amet, molestiae, enim magnam nisi modi nesciunt nostrum itaque rem ducimus! Beatae at error ducimus deserunt, voluptates dicta placeat illum necessitatibus, explicabo fugit animi accusamus! Dolore?
-                        Consequatur facere, sunt placeat architecto sapiente harum porro natus, magni ea totam distinctio, aliquid aspernatur minima ad nostrum dolore laudantium quia nam blanditiis quae dolor quidem maxime ullam! Dolor, autem.
-                        Tenetur optio assumenda, unde tempore ducimus nostrum numquam dolores nisi est aliquam delectus harum mollitia quas laboriosam provident accusantium quis. Provident aut illum fuga autem tenetur voluptas laboriosam incidunt maxime?</p>
-                    </section>
-                
-                </div>
-
-            </div>
-            <div class="slide five" id="section-projects">
-
-                 <div class="titleSection">
-                    <h2>cherif développeur web junior</h2>
-                </div>
-                <!-- le contenu qui se situera à droite -->
-                  <div class="projects">
-        <div class="ombreEtObjet" style="position: relative;">
-            <div class="objet2"><a href="https://badji-dieme-cherif-meteo-horoscope.sidathsoeun.fr/index.html" target="_blank">site météo</a></div>
-            <div class="triangle"></div>
-            <!-- <div class="ombre2"></div> -->
+                <div class="body"></div>
+              </div>
+          </div>
+          <p class="description-start">
+            <span>Explorez mon </span> univers de développeur full stack à travers un <span>portfolio</span> immersif <span>conçu pour mettre en lumière</span> la complémentarité de <span>mes compétences</span>, allant de la création d’interfaces modernes et intuitives jusqu’à l’architecture robuste et performante des applications, le tout porté par une véritable passion pour l’innovation et l’excellence technique.
+          </p>
         </div>
-         <div class="ombreEtObjet" style="position: relative;">
-            <div class="objet2"><a href="https://badji-dieme-cherif-meteo-horoscope.sidathsoeun.fr/index.html" target="_blank">site météo</a></div>
-            <div class="triangle"></div>
-            <!-- <div class="ombre2"></div> -->
-        </div> 
-        <div class="ombreEtObjet" style="position: relative;">
-            <div class="objet2"><a href="https://badji-dieme-cherif-meteo-horoscope.sidathsoeun.fr/index.html" target="_blank">site météo</a></div>
-            <div class="triangle"></div>
-            <!-- <div class="ombre2"></div> -->
+    </section>
+
+    <section id="s2" class="panel panel2">
+        <div class="overlay3">quelques projets</div>
+        <div class="projects-container">
+            <div class="project-wrapper">
+                <div class="hover-zone">Mini-cinéma-fictif</div>
+                <div class="project-item" data-project="0">Cinéma</div>
+                <div class="project-video">
+                    <div class="video-placeholder">
+                       <video muted loop preload="none">
+                        <source src="/videos/3fbbda1a-d5b4-4042-be03-b6a3a154c09b.mp4" type="video/mp4">
+                        Ton navigateur ne supporte pas la vidéo.
+                      </video>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="project-wrapper">
+                <div class="hover-zone">Crunchycroust</div>
+                <div class="project-item" data-project="1">Pizzeria</div>
+                <div class="project-video">
+                    <div class="video-placeholder">
+                       <video muted loop preload="none">
+                        <source src="/videos/3fbbda1a-d5b4-4042-be03-b6a3a154c09b.mp4" type="video/mp4">
+                        Ton navigateur ne supporte pas la vidéo.
+                      </video>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="project-wrapper">
+                <div class="hover-zone">astrométéo</div>
+                <div class="project-item" data-project="2">site météo</div>
+                <div class="project-video">
+                    <div class="video-placeholder">
+                       <video muted loop preload="none">
+                        <source src="/videos/3fbbda1a-d5b4-4042-be03-b6a3a154c09b.mp4" type="video/mp4">
+                        Ton navigateur ne supporte pas la vidéo.
+                      </video>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="project-wrapper">
+                <div class="hover-zone">Projet SETI</div>
+                <div class="project-item" data-project="3">Espace</div>
+                <div class="project-video">
+                    <div class="video-placeholder">
+                       <video muted loop preload="none">
+                        <source src="/videos/3fbbda1a-d5b4-4042-be03-b6a3a154c09b.mp4" type="video/mp4">
+                        Ton navigateur ne supporte pas la vidéo.
+                      </video>
+                    </div>
+                </div>
+            </div>
+            
+             <div class="more-projects">
+          <div class="allProjects">
+            <a href="https://john-moore.framer.website/#section-works">tous les projets</a>
+          </div>
         </div>
-        <div class="ombreEtObjet" style="position: relative;">
-            <div class="objet2"><a href="https://badji-dieme-cherif-meteo-horoscope.sidathsoeun.fr/index.html" target="_blank">site météo</a></div>
-            <div class="triangle"></div>
-            <!-- <div class="ombre2"></div> -->
         </div>
        
+    </section>
 
-    </div>
-                
-            </div>
-            <div class="slide six" id="section-contact">slide 6</div>
+    <section id="s3" class="panel" style="background: #F0F0F0;">
+        <div class="content visible">
+          <h2>À propos</h2>
+           <p>Développeur web full stack, je crée des sites modernes, sécurisés et performants avec HTML, CSS, JavaScript, PHP, MySQL et Symfony. Je maîtrise le déploiement, la création et la connexion d’APIs, le SEO et la sécurité.</p>
+          <p>Je mets un soin particulier à l’UI et à l’UX pour que chaque site soit à la fois fonctionnel et visuellement marquant. Curieux et polyvalent, je continue d’élargir mes compétences pour devenir un véritable “couteau suisse” du développement web.</p>
+          <p>Mon objectif : concevoir les meilleurs sites web, en France comme à l’international.</p>
         </div>
+    </section>
 
-    </div>
+    <section id="s4" class="panel" style="background: #F0F0F0;">
+    <div class="mail">
+   <p class="phrase">Une idée, un projet en tête ou juste une envie d’échanger ?</p>
 
-    <script src="script.js"></script>
+   <div class="marquee">
+     <div class="marquee-inner">
+        <a href="mailto:cherifprog02@gmail.com" class="write">contactez-moi!!</a>
+        <a href="mailto:cherifprog02@gmail.com" class="write">contactez-moi!!</a>
+        <a href="mailto:cherifprog02@gmail.com" class="write">contactez-moi!!</a>
+        <a href="mailto:cherifprog02@gmail.com" class="write">contactez-moi!!</a>
+     </div>
+   </div>
+
+   <p class="links">
+      <hr>
+      <div class="linksContain">
+        <a href="/docs/fichier.txt" download>
+	        telecharger CV
+        </a> |
+         <a href="https://github.com/youngyy001" target="_blank">GitHub</a> | 
+         <a href="https://www.linkedin.com/in/cherif-badji-dieme-233b38243/" target="_blank">LinkedIn</a>
+      </div>
+   </p>
+</div>
+
+    </section>
+
+<script src="script.js"></script>
 </body>
-
 </html>
