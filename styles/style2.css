@@ -447,11 +447,11 @@
         }
 
         .project-item {
-            font-size: 4em;
+            font-size: 5em;
             font-weight: 300;
             color: #666;
             text-transform: uppercase;
-            letter-spacing: 15px;
+            letter-spacing: 10px;
             writing-mode: vertical-rl;
             text-orientation: mixed;
             transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
@@ -465,7 +465,7 @@
             opacity: 1;
             padding: 15px;
              font-family: 'Impact', 'Arial Black', sans-serif;
-             margin-top: 10px;
+             margin-top: 40px;
              text-decoration: none;
              z-index: 10;
 
