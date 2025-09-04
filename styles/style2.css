@@ -788,12 +788,19 @@
 }
 
 /* page contact */
+.body-works{
+    display: flex;
+    /* flex-direction: column;   */
+    justify-content: space-between;
+}
+
 .main-work{
     min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-left: 164px
 }
 .main-work div{
     text-transform: uppercase;
@@ -804,17 +811,40 @@ font-size: 60px;
 .main-work div p{
     text-align: center;
 }
+.workPageButtonHome{
+    margin: 15px;
+}
+
 .workPageButtonHome a{
     text-decoration: none;
     color: white;
     font-family: 'Impact', 'Arial Black', sans-serif;
     font-size: 40px;
-    margin: 30px 0 0 20px;
     text-transform: uppercase;
 
 }
 
 .workPageButtonHome a:hover{
+    color: #18FF13;
+    font-style: italic;
+}
+
+.footer-works{
+    font-family: 'Impact', 'Arial Black', sans-serif;
+    font-size: 40px;
+    text-transform: uppercase;
+        margin: 15px;
+
+
+
+}
+
+.footer-works a{
+    text-decoration: none;
+    color: white;
+}
+
+.footer-works a:hover{
     color: #18FF13;
     font-style: italic;
 }
