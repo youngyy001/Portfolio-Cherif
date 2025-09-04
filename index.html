@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio B.C</title>
-    <link rel="stylesheet" href="/styles/reset2.css">
+   <link rel="stylesheet" href="/styles/reset2.css">
    <link rel="stylesheet" href="/styles/style2.css">
 </head>
 <body>
@@ -24,7 +24,6 @@
           0%
         </div>
         <div class="loader-text">
-          salut
           En cours de chargement.....
         </div>
     </div>
@@ -78,15 +77,15 @@
     </section>
 
     <section id="s2" class="panel panel2">
-        <div class="overlay3">quelques projets</div>
+        <div class="overlay3">projets récents</div>
         <div class="projects-container">
             <div class="project-wrapper">
                 <div class="hover-zone">Mini-cinéma-fictif</div>
-                <div class="project-item" data-project="0">Cinéma</div>
+                <a href="https://badji-dieme-cherif-mini-cgr-fictif.sidathsoeun.fr/" target="_blank" class="project-item" data-project="0">Cinéma</a>
                 <div class="project-video">
                     <div class="video-placeholder">
                        <video muted loop preload="none">
-                        <source src="/videos/3fbbda1a-d5b4-4042-be03-b6a3a154c09b.mp4" type="video/mp4">
+                        <source src="/videos/site-cinema.mp4" type="video/mp4">
                         Ton navigateur ne supporte pas la vidéo.
                       </video>
                     </div>
@@ -94,12 +93,12 @@
             </div>
             
             <div class="project-wrapper">
-                <div class="hover-zone">Crunchycroust</div>
-                <div class="project-item" data-project="1">Pizzeria</div>
+                <div class="hover-zone">daily-zodiac</div>
+                <a href="https://ecf1-badji-dieme-cherif.sidathsoeun.fr/index.html" target="_blank" class="project-item" data-project="1">horoscope</a>
                 <div class="project-video">
                     <div class="video-placeholder">
                        <video muted loop preload="none">
-                        <source src="/videos/3fbbda1a-d5b4-4042-be03-b6a3a154c09b.mp4" type="video/mp4">
+                        <source src="/videos/daily-zodiac.mp4" type="video/mp4">
                         Ton navigateur ne supporte pas la vidéo.
                       </video>
                     </div>
@@ -108,11 +107,11 @@
             
             <div class="project-wrapper">
                 <div class="hover-zone">astrométéo</div>
-                <div class="project-item" data-project="2">site météo</div>
+                <a href="https://badji-dieme-cherif-meteo-horoscope.sidathsoeun.fr/index.html" target="_blank" class="project-item" data-project="2">site météo</a>
                 <div class="project-video">
                     <div class="video-placeholder">
                        <video muted loop preload="none">
-                        <source src="/videos/3fbbda1a-d5b4-4042-be03-b6a3a154c09b.mp4" type="video/mp4">
+                        <source src="/videos/meteo-video.mp4" type="video/mp4">
                         Ton navigateur ne supporte pas la vidéo.
                       </video>
                     </div>
@@ -134,21 +133,49 @@
             
              <div class="more-projects">
           <div class="allProjects">
-            <a href="https://john-moore.framer.website/#section-works">tous les projets</a>
+            <a href="/works.html">tous les projets</a>
           </div>
         </div>
         </div>
        
     </section>
+    
+<section id="s3" class="panel apropos">
+  <span class="overlay3 black">à propos de moi </span>
+  <div class="apropos-container">
+    <!-- Texte (toujours à gauche) -->
+    <div class="apropos-text">
+      <hr>
+      <p>
+        Développeur web full stack, je 
+        <span class="keyword" data-title="Création de sites " data-video="/videos/3fbbda1a-d5b4-4042-be03-b6a3a154c09b.mp4">crée des sites modernes</span>, sécurisés et performants avec différents langages comme
+        <span class="keyword" data-title="Different langages" data-video="/videos/3fbbda1a-d5b4-4042-be03-b6a3a154c09b.mp4">HTML, CSS, JavaScript, PHP, MySQL et Symfony</span>. 
+        Je maîtrise le déploiement, la création et la connexion d’APIs, le SEO et la sécurité.
+      </p>
+      <p>
+        Je mets un soin particulier à  
+        <span class="keyword" data-title="UI Design / UX" data-video="/videos/3fbbda1a-d5b4-4042-be03-b6a3a154c09b.mp4">l’UI et à l’UX</span> pour que chaque site soit à la fois fonctionnel et visuellement marquant. 
+        Curieux et polyvalent, je continue d’élargir mes compétences pour devenir un véritable “couteau suisse” du développement web.
+      </p>
+      <p>
+        Mon objectif : 
+        <span class="keyword" data-title="sites marquants" data-video="/videos/3fbbda1a-d5b4-4042-be03-b6a3a154c09b.mp4">concevoir les meilleurs sites web</span>, en France comme à l’international.
+      </p>
+      <hr>
+    </div>
+   
 
-    <section id="s3" class="panel" style="background: #F0F0F0;">
-        <div class="content visible">
-          <h2>À propos</h2>
-           <p>Développeur web full stack, je crée des sites modernes, sécurisés et performants avec HTML, CSS, JavaScript, PHP, MySQL et Symfony. Je maîtrise le déploiement, la création et la connexion d’APIs, le SEO et la sécurité.</p>
-          <p>Je mets un soin particulier à l’UI et à l’UX pour que chaque site soit à la fois fonctionnel et visuellement marquant. Curieux et polyvalent, je continue d’élargir mes compétences pour devenir un véritable “couteau suisse” du développement web.</p>
-          <p>Mon objectif : concevoir les meilleurs sites web, en France comme à l’international.</p>
-        </div>
-    </section>
+    <!-- Pancarte (affichée à droite uniquement au hover) -->
+    <div class="apropos-pancarte">
+      <h3 class="pancarte-title"></h3>
+      <div class="pancarte-shape">
+        <video muted loop></video>
+      </div>
+    </div>
+
+  </div>
+</section>
+
 
     <section id="s4" class="panel" style="background: #F0F0F0;">
     <div class="mail">

@@ -237,7 +237,15 @@
             background: #FF3400; 
         }
 
-        
+        .overlay3{
+            color: white;
+            font-size: 100px;
+            font-family: 'Impact', 'Arial Black', sans-serif;
+            text-transform: uppercase;
+        }
+        .black{
+            color: black;
+        }
 
         .content {
             position: relative;
@@ -319,13 +327,14 @@
         /* Texte description plus gros et gras */
         .description-start {
             /* grid-area: description; */
-            font-size: 20px !important; /* Plus gros */
+            font-size: 22px !important; /* Plus gros */
             font-weight: bold; /* Un peu de gras */
             line-height: 1.9;
             text-align: center;
             max-width: none;
             margin-bottom: 150px;
             padding: 20px;
+            
            
         }
         .description-start span{
@@ -340,7 +349,7 @@
             flex-direction: column;
             align-items: center;
             transform: scale(1.9); /* Robot plus grand */
-            margin-bottom: -100px;
+            margin-bottom: -60px;
         }
 
         
@@ -425,6 +434,7 @@
             width: 100%;
             gap: 80px;
             position: relative;
+            margin-bottom: -20px;
         }
 
         .project-wrapper {
@@ -441,7 +451,7 @@
             font-weight: 300;
             color: #666;
             text-transform: uppercase;
-            letter-spacing: 8px;
+            letter-spacing: 15px;
             writing-mode: vertical-rl;
             text-orientation: mixed;
             transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
@@ -453,7 +463,12 @@
             align-items: center;
             justify-content: center;
             opacity: 1;
-            padding: 20px;
+            padding: 15px;
+             font-family: 'Impact', 'Arial Black', sans-serif;
+             margin-top: 10px;
+             text-decoration: none;
+             z-index: 10;
+
         }
 
         .project-item:hover {
@@ -539,7 +554,11 @@
         .allProjects a{
           text-decoration: none;
            color: #666;
-           font-size: 3em;
+           font-size: 3.5em;
+             font-family: 'Impact', 'Arial Black', sans-serif;
+             letter-spacing: 10px;
+
+
         }
         .allProjects a:hover{
           color: white;
@@ -631,13 +650,176 @@
         }
         }
 
+        /* a coller */
+        .apropos{
+            display: flex;
+            flex-direction: column;
+        }
+.apropos-container {
+  position: relative; /* permet de placer la pancarte en absolu */
+  width: 90%;
+  margin: auto;
+  margin-bottom: 10px;
+}
 
-          /* .mascot {
+.apropos-text {
+  font-size: 1.3em;
+  line-height: 1.8;
+  color: black;
+  text-align: left;
+  max-width: 50%; /* garde le texte sur la moitié gauche */
+ font-family: 'Impact', 'Arial Black', sans-serif;
+ font-weight: lighter;
+
+}
+
+.apropos-text .keyword {
+  background-color: #18FF13;
+  padding: 4px 6px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+.apropos-text .keyword:hover {
+  background-color: #0f990a;
+  color: white;
+}
+.apropos-text hr{
+    font-weight: bold;
+}
+
+/* Pancarte : en absolu, fixe à droite */
+.apropos-pancarte {
+    margin-right: 100px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 600px;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  background-color: #F0F0F0;
+  border-radius: 40px;
+  margin-top: 50px;
+
+  /* effet 3D : côté droit penché vers l’avant */
+  transform: perspective(1200px) rotateY(-25deg) rotateX(5deg);
+  transform-origin: left center;
+
+
+  /* animations : flottement + fadeIn */
+  animation: floatPancarte 4s ease-in-out infinite, fadeIn 0.4s ease forwards;
+}
+
+/* Animation flottante : rotation et translation verticale */
+@keyframes floatPancarte {
+  0% { transform: perspective(1200px) rotateY(-25deg) rotateX(5deg) translateY(0px); }
+  25% { transform: perspective(1200px) rotateY(-23deg) rotateX(6deg) translateY(-3px); }
+  50% { transform: perspective(1200px) rotateY(-25deg) rotateX(5deg) translateY(0px); }
+  75% { transform: perspective(1200px) rotateY(-27deg) rotateX(4deg) translateY(3px); }
+  100% { transform: perspective(1200px) rotateY(-25deg) rotateX(5deg) translateY(0px); }
+}
+
+
+/* Hover : accentuation de l’effet */
+.apropos-pancarte:hover {
+  transform: perspective(1000px) rotateY(-18deg) rotateX(5deg) scale(1.03);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+}
+
+/* Quand on survole le bloc pancarte, titre suit la transformation */
+.apropos-pancarte:hover .pancarte-title {
+    transform: perspective(1000px) rotateY(-18deg) rotateX(5deg) scale(1.03);
+}
+
+
+/* Titre de la pancarte */
+.pancarte-title {
+    
+  font-size: 4em;
+  font-weight: bold;
+  margin-bottom: -6px;
+  color: black;
+  text-align: center;
+  transform: perspective(1200px) rotate(-3deg);
+  transform-origin: left center;
+  max-width: 90%; /* garde le texte dans le bloc */
+  text-transform: uppercase;
+  font-family: 'Impact', 'Arial Black', sans-serif;
+  margin-left: 55px;
+
+}
+
+/* Conteneur vidéo */
+.pancarte-shape {
+  width: 100%;
+  aspect-ratio: 16/9;
+  background: #000;
+  overflow: hidden;
+  transform: perspective(1200px) rotateY(-25deg) rotateX(5deg);
+  transform-origin: left center;
+  border-radius: 10px;
+  filter: drop-shadow(0 0 0.75rem black);
+}
+
+/* Vidéo */
+.pancarte-shape video {
+  min-width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: perspective(1200px) rotateY(-1deg) rotateX(1deg);
+  border-radius: 10px;
+  margin-left: -2px;
+}
+
+/* Animation fadeIn existante */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateX(30px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+.project-video,
+.project-video *,
+.hover-zone,
+.overlay,
+.overlay3 {
+  pointer-events: none !important;
+}
+
+/* page contact */
+.main-work{
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
-    margin: 2rem auto;
-  } */
+}
+.main-work div{
+    text-transform: uppercase;
+  font-family: 'Impact', 'Arial Black', sans-serif;
+font-size: 60px;
+
+}
+.main-work div p{
+    text-align: center;
+}
+.workPageButtonHome a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Impact', 'Arial Black', sans-serif;
+    font-size: 40px;
+    margin: 30px 0 0 20px;
+    text-transform: uppercase;
+
+}
+
+.workPageButtonHome a:hover{
+    color: #18FF13;
+    font-style: italic;
+}
+
+
 
 
 

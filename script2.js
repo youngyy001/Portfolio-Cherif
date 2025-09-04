@@ -224,4 +224,31 @@ document.addEventListener("mousemove", (e) => {
 
 
 
+// a coller
+document.querySelectorAll(".apropos-text .keyword").forEach(word => {
+  word.addEventListener("mouseenter", () => {
+    const title = word.dataset.title;
+    const videoSrc = word.dataset.video;
+
+    const pancarte = document.querySelector(".apropos-pancarte");
+    const pancarteTitle = pancarte.querySelector(".pancarte-title");
+    const pancarteVideo = pancarte.querySelector("video");
+
+    pancarte.style.display = "flex";
+    pancarteTitle.textContent = title;
+    pancarteVideo.src = videoSrc;
+    pancarteVideo.play();
+  });
+
+  word.addEventListener("mouseleave", () => {
+    const pancarte = document.querySelector(".apropos-pancarte");
+    const pancarteVideo = pancarte.querySelector("video");
+
+    pancarteVideo.pause();
+    pancarte.style.display = "none";
+  });
+});
+
+
+
 
