@@ -879,3 +879,156 @@ font-size: 60px;
                 height: 100%;
             }
         }
+
+
+        /* responsive */
+        /* ==================== RESPONSIVE ==================== */
+
+/* Mobiles très petits (max 500px) */
+@media screen and (max-width: 500px) {
+  header {
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+  }
+  nav {
+    flex-wrap: wrap;
+    gap: 8px;
+    padding: 10px;
+  }
+  nav a {
+    font-size: 0.9rem;
+    padding: 6px 10px;
+  }
+  .big-title {
+    font-size: 80px;
+  }
+  #welcome-text {
+    font-size: 20px;
+    width: 90%;
+    height: auto;
+  }
+  .description-start {
+    font-size: 16px !important;
+    line-height: 1.5;
+  }
+  .projects-container {
+    flex-direction: column;
+    gap: 30px;
+    height: auto;
+  }
+  .project-item {
+    font-size: 1.8em;
+    writing-mode: horizontal-tb;
+    height: auto;
+  }
+  .mail .write {
+    font-size: 40px;
+  }
+  .apropos-text {
+    max-width: 100%;
+    font-size: 1em;
+  }
+  .apropos-pancarte {
+    position: static;
+    width: 100%;
+    margin: 20px auto;
+    transform: none;
+  }
+}
+
+/* Tablettes (480px à 959px) */
+@media screen and (min-width: 480px) and (max-width: 959px) {
+  header {
+    flex-wrap: wrap;
+    padding: 10px 20px;
+  }
+  nav a {
+    font-size: 1rem;
+  }
+  .big-title {
+    font-size: 120px;
+  }
+  #welcome-text {
+    font-size: 28px;
+    width: 80%;
+    height: auto;
+  }
+  .description-start {
+    font-size: 18px !important;
+  }
+  .projects-container {
+    flex-wrap: wrap;
+    gap: 50px;
+    height: auto;
+    padding: 40px 0;
+  }
+  .project-item {
+    font-size: 2.5em;
+    writing-mode: horizontal-tb;
+    height: auto;
+  }
+  .apropos-text {
+    max-width: 100%;
+  }
+  .apropos-pancarte {
+    position: static;
+    width: 100%;
+    margin: 20px auto;
+    transform: none;
+  }
+}
+
+/* Tablettes larges / petits laptops (760px à 1280px) */
+@media screen and (min-width: 760px) and (max-width: 1280px) {
+  .big-title {
+    font-size: 200px;
+  }
+  #welcome-text {
+    font-size: 32px;
+    width: 70%;
+  }
+  .projects-container {
+    gap: 60px;
+    flex-wrap: wrap;
+    height: auto;
+  }
+  .project-item {
+    font-size: 3.5em;
+    writing-mode: vertical-rl;
+    height: 50vh;
+  }
+  .apropos-text {
+    max-width: 70%;
+  }
+  .apropos-pancarte {
+    width: 400px;
+  }
+}
+
+/* Mobiles moyens (max 600px) */
+@media screen and (max-width: 600px) {
+  .big-title {
+    font-size: 100px;
+  }
+  #welcome-text {
+    font-size: 22px;
+    width: 100%;
+  }
+  nav {
+    flex-direction: column;
+    gap: 5px;
+  }
+  nav a {
+    font-size: 0.85rem;
+  }
+  .description-start {
+    font-size: 15px !important;
+  }
+  .mail .write {
+    font-size: 60px;
+  }
+  .apropos-text {
+    font-size: 0.95em;
+  }
+}
