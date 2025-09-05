@@ -10,18 +10,18 @@
     background: black; /* contour extérieur */
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
     align-items: center;
     height: 100vh; /* occupe tout l'écran */
   }
   header{
-      width: 100%;
-  display: flex;
-  justify-content: flex-start;
-  padding: 10px 20px;
-  position: absolute;
-  top: 0;
-  left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
   }
 
   header a{
@@ -30,12 +30,23 @@
     color: white;
     font-size: 40px;
     text-decoration: none;
-    
   }
 
   header a:hover{
     color: #18FF13;
     font-style: italic;
+  }
+
+  header button {
+    font-family: 'Impact', 'Arial Black', sans-serif;
+    text-transform: uppercase;
+    background-color: #18FF13;
+    color: white;
+    font-size: 20px;
+    border: none;
+    border-radius: 8px;
+    padding: 8px 15px;
+    cursor: pointer;
   }
 
   h1{
@@ -90,10 +101,9 @@
     font-family: 'Impact', 'Arial Black', sans-serif;
     text-transform: uppercase;
     width: 400px;
-    height: 350px;
+    height: 390px;
     font-size: 30px;
     line-height: 62px
-
   }
   .popup button {
     margin-top: 10px;
@@ -111,9 +121,10 @@
 
 <header>
     <a href="/index.html">retour à l'accueil</a>
+    <button id="permanentSupportBtn">Soutenir</button>
 </header>
 
-    <h1>MINI-JEU-SPATIAL</h1>
+<h1>MINI-JEU-SPATIAL</h1>
 <div id="message"></div>
 <canvas id="gameCanvas"></canvas>
 
@@ -125,6 +136,8 @@
   Salut mon commandant ! <br>
   Soutenez le projet avec seulement 1€ pour rendre la navette plus puissante ! <br>
   <button id="supportBtn">Soutenir</button>
+  <br>
+  <button id="closeSupport">Fermer</button>
 </div>
 
 <div id="thanksPopup" class="popup">
@@ -239,6 +252,24 @@ function closePopup(id) {
   overlay.style.display = "none";
 }
 
+// --- Lien Stripe ---
+const stripeUrl = "https://buy.stripe.com/4gM00b57Va7C5wI0ao6wE00"; // ⚠️ configure bien success_url=?paid=1
+
+// --- Gestion boutons ---
+document.getElementById("supportBtn").addEventListener("click", () => {
+  window.location.href = stripeUrl;
+});
+document.getElementById("permanentSupportBtn").addEventListener("click", () => {
+  window.location.href = stripeUrl;
+});
+document.getElementById("closeSupport").addEventListener("click", () => {
+  closePopup("supportPopup");
+});
+document.getElementById("closeThanks").addEventListener("click", () => {
+  closePopup("thanksPopup");
+});
+
+// --- Timer pour popup soutien ---
 setTimeout(() => {
   if(!supportShown){
     supportShown = true;
@@ -246,19 +277,21 @@ setTimeout(() => {
   }
 }, 15000);
 
-document.getElementById("supportBtn").addEventListener("click", () => {
-  window.location.href = 'https://buy.stripe.com/4gM00b57Va7C5wI0ao6wE00';
-});
-
-document.getElementById("closeThanks").addEventListener("click", () => {
-  closePopup("thanksPopup");
-});
-
 // --- DÉTECTION PAIEMENT ---
 const urlParams = new URLSearchParams(window.location.search);
 if (urlParams.get("paid") === "1") {
+  if (localStorage.getItem("supporter") === "true") {
+    openPopup("thanksPopup"); // déjà supporter → juste merci
+  } else {
+    ship.power = 2;
+    localStorage.setItem("supporter", "true"); // sauvegarde permanent
+    openPopup("thanksPopup");
+  }
+}
+
+// --- Vérifie si le joueur est déjà supporter ---
+if (localStorage.getItem("supporter") === "true") {
   ship.power = 2;
-  openPopup("thanksPopup");
 }
 </script>
 
